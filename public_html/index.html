@@ -8,41 +8,118 @@ Click nbfs://nbhost/SystemFileSystem/Templates/Other/html.html to edit this temp
         <title>The Pictr. Club</title>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="main.css">
+        <link rel="stylesheet" href="container.css">
+        <link rel="stylesheet" href="tagbox.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"> 
     </head>
-    
+
     <body>
-        <div>
-            <h1> The Pictr. Club </h1>
-            <ul>
-                <li>
-                    <a href='#'> Profile </a>
-                </li>
-                <li>
-                    <a href='#'> Settings </a>
-                </li>
-            </ul>
-            <hr/>
+        <div class="header">
+            <h1 class='page-title'> The Pictr. Club</h1>
+            <input class='search' type='search' placeholder='Whats on your mind today?'>
+
+            <div class='topnav'>
+                <a class='navlist' href='login.html'> Profile </a>
+                <a class='navlist' href='#'> Create </a>
+                <a class='navlist' href='#'> Settings </a>
+            </div>
         </div>
-        
-        <div>
-            <input type='search' placeholder='Whats in your mind today?'>
-        </div>
-        
+
+        <hr/>
+
         <div class='box'>
-            <h3> Tags </h3>
             <ul>
-                <li> <a> Clothing <a/> </li>
-                <li> <a> Photography <a/> </li>
-                <li> <a> Art <a/> </li>
-                <li> <a> Flowers <a/> </li>
+                <h3> Tags </h3>
+                <li class="listItem"> <a href="#"> Clothing<a/> </li>
+                <li class="listItem"> <a href="#"> Photography<a/> </li>
+                <li class="listItem"> <a href="#"> Art<a/> </li>
+                <li class="listItem"> <a href="#"> Flowers<a/> </li>
             </ul>
         </div>
-        
-        <div class='pictures'>
-            <a href='#'>
-            <img importance='auto' loading='auto' src='https://i.pinimg.com/236x/b4/d9/2d/b4d92d0947d4ffe3f1dd8cbebb85d263.jpg'/>
-            <h3> water-plantling | Vintage illustration art, Psychedelic art, Illustration art </h3>
-            </a>
+
+        <hr/>
+
+
+
+        <div class='container'>
+            <!--=================================-->
+            <div class="tile-container">
+
+                <div class="tile">
+                    <a href='#'>
+                        <img class='pic' src='https://i.pinimg.com/236x/02/60/49/026049dc11ded9cef2e1b991d4103a63.jpg'/>
+
+                        <div class="caption">
+                            <p> Image Caption Test </p>
+                        </div>
+                </div>        
+
+
+
+                <div class="tile">
+                    <a href='#'>
+                        <img class='pic' src='https://i.pinimg.com/236x/fe/d0/8e/fed08ebc9ac7c957d1288512c5de35f0.jpg'/>
+
+
+                        <div class="caption">
+                            <p> Image about art in Backgrounds by ysm on We Heart It </p>
+                        </div>
+                </div>
+
+
+                <div class="tile">
+                    <a href='#'>
+                        <img class='pic' src='https://i.pinimg.com/236x/6c/f2/ac/6cf2ac60180d17eca2bfe55f3627ea00.jpg'/>
+
+
+                        <div class="caption">
+                            <p> All of the Lights and More</p>
+                        </div>
+                </div>
+
+
+
+                <div class="tile">
+                    <a href='#'>
+                        <img class='pic' src='https://i.pinimg.com/236x/e0/e0/23/e0e02380e0005a19fc8c3e75fa4bd766.jpg'/>
+
+                        <div class="caption">
+                            <p> Film photography feature of a fine art series on 35mm film.</p>
+                        </div>
+                </div>
+
+
+
+                <div class="tile">
+                    <a href='#'>
+                        <img class='pic' src='https://i.pinimg.com/236x/1b/79/47/1b79479c24b020bb5eeb7bff33bd2401.jpg'/>
+
+                        <div class="caption">
+                            <h3> Signature wardrobes! </h3>
+                        </div>
+                </div>
+
+
+                <div class="tile"
+                     <a href='#'>
+                    <img class='pic' src='https://i.pinimg.com/236x/b4/d9/2d/b4d92d0947d4ffe3f1dd8cbebb85d263.jpg'/>
+
+                    <div class="caption">
+                        <p> water-plantling | Vintage illustration art, Psychedelic art, Illustration art </p>
+                    </div>
+                </div>
+
+                <div class='title'>
+                    <a href='#'>
+                        <img class='pic' src='https://i.pinimg.com/236x/22/ba/c7/22bac738dfd8b9e31aecb53ccb7ceb83.jpg'/>   
+
+                        <div class='caption'>
+                            <p> Test Caption</p>
+                        </div>
+                </div>
+                
+            </div>
         </div>
     </body>
 </html>

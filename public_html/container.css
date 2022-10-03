@@ -1,0 +1,44 @@
+/*Contains generally all the things regarding the pictures.*/
+
+.container {
+  display: flex;
+  justify-content: center;
+  margin-top: 12px;
+}
+
+.tile-container{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    width: 815px;
+  height: 350vh;
+}
+
+.tile {
+    width: 240px;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    padding: 10px;
+    border-radius: 8px;
+}
+
+.tile:hover {
+    background-color: #D7C0AE;
+}
+
+.tile img {
+    width: 240px;
+    border-radius: 8px;
+}
+
+.caption {
+    display: flex;
+    justify-content: space-between;
+}
+
+.caption p {
+    font-weight: 600;
+    color: #61481C;
+    font-size: 20px;
+}
