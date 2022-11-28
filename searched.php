@@ -1,7 +1,12 @@
 <?php
 include "Config/Database.php";
 $search_URL = "http://localhost/phptest/searched.php?search?q=";
-if (!empty($_SESSION["id"])) {
+if (isset($_POST ["tags"])){
+    $search=$_POST['search'];
+    header("location: ". $search_URL.$search.' ');
+}
+
+if(!empty($_SESSION["id"])){
     $id = $_SESSION["id"];
     $result = mysqli_query($conn, "SELECT * FROM user WHERE id = $id");
     $row = mysqli_fetch_assoc($result);
@@ -11,10 +16,16 @@ if (!empty($_SESSION["id"])) {
     header("Location: login.php");
 }
 
-if (isset($_POST ["tags"])){
-    $search=$_POST['search'];
-    header("location: ". $search_URL.$search.' ');
+$url = $_SERVER['REQUEST_URI'];
+$new = explode("/searched.php?search?q=",$url);
+
+if (isset($_GET['tags'])){
+    $new[1] = $_GET['tags'];
 }
+
+$query = "SELECT * FROM images WHERE tags = '$new[1]'";
+$res = $conn->query($query);
+
 ?>
 
 <!DOCTYPE html>
@@ -27,7 +38,7 @@ if (isset($_POST ["tags"])){
         <link rel="stylesheet" href="CSS/main.css">
         <link rel="stylesheet" href="CSS/navbar.css">
         <link rel="stylesheet" href="CSS/save.css"
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+              <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
     </head>
     <body>
@@ -39,8 +50,7 @@ if (isset($_POST ["tags"])){
             </form>
 
             <div class='topnav'>
-                <a href="profile.php"> <img class="pfp" 
-                src="https://cdn.pixabay.com/photo/2015/10/05/22/37/blank-profile-picture-973460__480.png" alt="user" /> </a>
+                <a href="index.php"> <img class="pfp" src="https://cdn.pixabay.com/photo/2015/10/05/22/37/blank-profile-picture-973460__480.png" alt="user" /> </a>
                 <a class='navlist' href='profile.php'> Profile </a>
                 <a class='navlist' href='create.php'> Create </a>
                 <a class='navlist' href='saved.php'> Saved </a>
@@ -48,33 +58,36 @@ if (isset($_POST ["tags"])){
         </div>
 
         <div class='title'> 
-            <h2> Saved Photos of your journey! </h2> 
+            <h2> Search of...<?php echo $new[1]?> <h2> 
         </div>
 
 
         <!-- Change only this part. -->
         <div class="container">
             <?php
-            $sql = "SELECT * FROM saved ORDER BY saveid DESC";
+            // get from the new saved db
+            $sql = "SELECT * FROM images ORDER BY tags ASC";
             $res = mysqli_query($conn, $sql);
 
             if (mysqli_num_rows($res) > 0) {
-                while ($saved = mysqli_fetch_assoc($res)) {
+                while ($images = mysqli_fetch_assoc($res)) {
+                    if ($images['tags'] == $new[1]){
                     ?>
+
                     <div class='pContainer'>
                         <div class='pictureContainer'>
                             <div class="picture">
-                                <img class='item' src="uploads/<?= $saved['photourl'] ?>">
+                                <img class='item' src="uploads/<?= $images['image_url'] ?>">
                             </div>
                         </div>
                     </div>
                     <?php
+                    } 
                 }
             }
             ?>
         </div>
 
 
-    </body>
-</html>
-
+        </body>
+    </html>

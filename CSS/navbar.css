@@ -1,5 +1,5 @@
 .header {
-    border-bottom: 1px solid #f2f2f2;
+    border-bottom: 0px solid #f2f2f2;
     display: flex;
     align-items: center;
 }
@@ -14,7 +14,7 @@
 .navlist {
     float: left;
     color: #562B08;
-    padding: 30px;
+    padding: 35px;
     padding-top: 3px;
     text-decoration: none;
     font-size: 23px;
@@ -46,7 +46,7 @@
     font-weight: bold;
     outline: none;
     padding: 0px;
-    width: 1130px;
+    width: 1000px;
     height: 40px;
     text-align: center;
     background-color: #DFDFDE;
@@ -63,4 +63,31 @@
     margin: 5px;
     margin-left: 10px;
     float: right;
+}
+
+.searchtag {
+    text-align: center;
+    display: inline;
+    color: #562B08;
+    padding: 35px;
+    padding-top: 3px;
+    text-decoration: none;
+    font-size: 23px;
+    text-decoration: underline 0.15em #F5EFE6;
+    transition: text-decoration-color 300ms;
+    margin: 5px;
+    margin-left: 10px;
+    background-color: #D7C0AE;
+    border-radius: 15px;
+    width: 40px;
+    height: 10px;
+    border: none;
+}
+
+.searchtag:hover {
+    text-decoration-color: #562B08;
+    background-color: #967E76;
+    transition: background-color 240ms;
+    color: #F5EFE6;
+    transition: color 240ms;
 }

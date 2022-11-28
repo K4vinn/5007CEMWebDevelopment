@@ -3,16 +3,15 @@ body {
 }
 
 .detailscontainer{
-    background-color: #9F8772;
+    background-color: #8B7E74;
     justify-content: center;
     border: 1px solid #ccc;
     border-radius: 6px;
     height: auto;
     width: 1000px;
-    padding: 6px 12px;
-    cursor: pointer;
+    padding: 14px;
     margin: 10px auto;
-    text-align: center;
+    text-align: center;;
 }
 
 .share {
@@ -20,7 +19,8 @@ body {
     height: 50px;
     float: right;
     position: relative;
-    top: 120px;
+    top: 130px;
+    left: 0px;
 }
 
 .modal {
@@ -31,7 +31,7 @@ body {
 .preview {
     margin: 10 auto;
     justify-content: center;
-    width: 70%;
+    width: 60%;
     height: auto;
     outline: none;
     border: 0px solid #D7C0AE;

@@ -2,18 +2,19 @@
     background-color: white;
     justify-content: center;
     border: 1px solid #ccc;
-    height: 500px;
+    height: auto;
     width: 60%;
     padding: 6px 12px;
     cursor: pointer;
     margin: 10px auto;
     text-align: center;
-    
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
 }
 
 .comments > h4 {
     color: black;
     text-decoration: underline;
+    font-size: 25px;
 }
 
 .input-row {
@@ -36,7 +37,7 @@
 	width: 300px;
 	border-radius: 4px;
 	cursor: pointer;
-        transition: transform .1s;
+    transition: transform .1s;
 }
 
 .btn-submit:hover{
@@ -45,4 +46,60 @@
     border: #ACBD86 1px solid;
 }
 
+/* .commentbox {
+    margin: 10 auto;
+    width: 1000px;
+    height: 40px;
+    background-color: #e0dfdf;
+    justify-content: center;
+    border-radius: 14px;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+} */
 
+.commentbox {
+    width: 815px;
+    padding: 20px;
+    margin-bottom: 4px;
+    background-color: #8B7E74;
+    border-radius: 4px;
+    margin: 5 auto;
+    justify-content: center;
+}
+
+.namedate {
+    float: left;
+    font-size: 18px;
+    color: #F1D3B3;
+}
+
+.commentitself {
+    font-size: 18px;
+    color: #F1D3B3;
+}
+
+
+.cmtbtn {
+    padding: 10px 20px;
+	background: #333;
+	border: #1d1d1d 1px solid;
+	color: #f0f0f0;
+	font-size: 0.9em;
+	width: 300px;
+	border-radius: 4px;
+	cursor: pointer;
+    transition: transform .1s;
+}
+
+.inputarea {
+    color: #F1D3B3;
+    border: none;
+    background-color: #8B7E74;
+    height: 100px;
+    width: 800px;
+    margin-bottom: 10px;
+}
+
+.inputarea::placeholder {
+    color: #F1D3B3;
+    padding: 10px;
+}

@@ -8,18 +8,6 @@ if (isset($_POST['submit']) && isset($_FILES['my_image'])) {
     print_r($_FILES['my_image']);
     echo "</pre>";
 
-    // $duplicate = mysqli_query($conn,
-    // "SELECT * FROM images WHERE title='$title'");
-
-    // if (mysqli_num_rows($duplicate) > 0){
-    //     echo "<script> alert('Image Title Already Exists') </script>";
-    // } else {
-    //     $query2 = "INSERT INTO images VALUES('','$title','$description','$tags')";
-    //     mysqli_query($conn, $query2);
-    //     echo
-    //     "<script> alert('Photo has been posted!') </script>";
-    // }
-
     $title = $_POST['title'];
     $description = $_POST['description'];
     $tags = $_POST['tags'];

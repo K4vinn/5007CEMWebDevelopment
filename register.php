@@ -17,8 +17,8 @@ if(isset($_POST["submit"])) {
             mysqli_query($conn, $query);
             echo
             "<script> alert('Registration has been completed! Welcome to the picture club!') </script>";
-            // sleep(3);
-            // header("Location: login.php");
+             sleep(3);
+             header("Location: login.php");
         } else {
             echo
             "<script> alert('Registration failed! Please try again later!') </script>";
