@@ -1,0 +1,37 @@
+.box ul{
+    text-align: center;
+    margin: 10px;
+    padding: 10px;
+    border: 1px solid #DFD3C3;
+    box-sizing: border-box;
+    background-color: #DFD3C3;
+    border-radius: 16px;
+}
+
+.box li{
+    text-align: center;
+    margin: 2px;
+    display:inline;
+    text-decoration: none;
+    font-size: 20px;
+    background-color: #D7C0AE;
+    border-radius: 15px;
+    padding: 4px;
+    transition: transform(1s)
+}
+
+.box li:hover {
+    tranform: scale(1.02)
+}
+
+.box a {
+    text-decoration: none;
+    color: #61481C;
+    font-size: 25px;
+}
+
+.box h3 {
+    color: #562B08;
+}
+
+

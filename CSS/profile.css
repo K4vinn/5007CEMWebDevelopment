@@ -1,0 +1,88 @@
+@import url('https://fonts.cdnfonts.com/css/gotham-serif-bold');
+
+.profile-card {
+    font-family: 'Gotham Serif', sans-serif;
+    justify-content: center;
+    border: 1px solid #ccc;
+    border-radius: 15px;
+    height: 650px;
+    padding: 6px 12px;
+    margin: 0 auto;
+    text-align: center;
+    background-color: #8B7E74;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    padding: 10px 10px 10px 10px;
+}
+
+.profile-picture {
+    width: 200px;
+    height: 200px;
+    border-radius: 15px;
+    margin: 0 auto;
+    margin-top: 10px;
+
+}
+
+.profile-card > p {
+    font-family: 'Gotham Serif', sans-serif;
+    font-size: 25px;
+    text-decoration: underline;
+    color: #E5D9B6;
+}
+
+.btnedit {
+    margin: 0 auto;
+    margin-top: 1rem;
+    border: none;
+    background-color: #F1D3B3;
+    height: 50px;
+    width: 200px;
+    border-radius: 16px;
+    transition: transform .05s;
+    color: #9F8772;
+}
+
+.btnedit:hover{
+    transform: scale(1.02);
+    color: #8B7E74;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+
+.bio-card{
+    justify-content: center;
+    border: none;
+    border-radius: 15px;
+    height: 140px;
+    padding: 6px 12px;
+    cursor: pointer;
+    margin: 0 auto;
+    text-align: center;
+    background-color: #F1D3B3;
+    
+}
+
+.bio-card > p {
+    font-family: 'Gotham Serif', sans-serif;
+    color: #8B7E74;
+    font-weight: 300;
+}
+
+.logoutbtn {
+    margin: 50px auto;
+    border: none;
+    text-decoration: none !important;
+    background-color: #F3EFE0;
+    height: 50px;
+    width: 200px;
+    border-radius: 16px;
+    transition: transform .05s;
+    color: #434242;
+}
+
+.logoutbtn:hover{
+    background-color: red;
+    color: white;
+    transform: scale(1.02);
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+

@@ -1,0 +1,52 @@
+@import url('https://fonts.cdnfonts.com/css/varela');
+
+*{
+    font-family: 'Varela', sans-serif;
+    font-size:24px;
+    margin:0px;
+    padding:0px;
+}
+
+body {
+    background-color:#F5EBE0;
+    margin: 2px;
+}
+
+hr {
+    border-radius: 14px;
+    border-top: 5px solid #DFD3C3;
+}
+
+a {
+    text-decoration: none;
+}
+
+.page-title {
+    font-family:Monospace;
+    color: #562B08;
+    text-shadow: 1px 1px #D7C0AE;
+    font-size: 27px;
+    text-decoration: underline 0.15em rgba(0, 0, 0, 0);
+    transition: text-decoration-color 300ms;
+    margin-left: 10px;
+    text-align: left;
+}
+
+.page-title:after {
+  position: absolute;
+  width: 100%;
+  transform: scaleX(0);
+  height: 2px;
+  bottom: 0;
+  left: 0;
+  background-color: #0087ca;
+  transform-origin: bottom right;
+  transition: transform 0.25s ease-out;
+}
+
+.logout{
+    font-size: 15px;
+    margin: 0 auto;
+    text-align: center;
+    color: black;
+}

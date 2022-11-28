@@ -1,0 +1,73 @@
+.upload-card{
+    justify-content: center;
+    border: 1px solid #ccc;
+    border-radius: 15px;
+    height: 1050px;
+    padding: 6px 12px;
+    cursor: pointer;
+    margin: 20px auto;
+    text-align: center;
+    background-color: #EDE4E0;
+    margin-bottom: 20px;
+}
+
+.preview-card {
+    margin: 0 auto;
+    width: 400px;
+    height: 600px;
+    margin-top: 10px;
+    outline: none;
+    border: 0px solid #D7C0AE;
+    border-radius: 15px;
+    background-color: #967E76;
+    object-fit: cover;
+}
+
+.inputf {
+    border: none;
+    background-color: #D0D2D7;
+    border-bottom: 1px solid #D2DAFF;
+    outline: none;
+    padding: 5px 10px;
+    margin: 0px auto;
+    margin-top: 0.5rem;
+    width: 400px;
+}
+
+.btnsbmt {
+    margin: 0 auto;
+    margin-top: 1rem;
+    border: none;
+    background-color: #D7C0AE;
+    height: 50px;
+    width: 100px;
+    border-radius: 16px;
+    transition: transform .1s;
+}
+
+.btnsbmt:hover{
+    transform: scale(1.02);
+    background-color: #967E76;
+}
+
+.upload{ 
+  display: inline-block;
+  background-color: indigo;
+  color: white;
+  padding: 0.5rem;
+  font-family: sans-serif;
+  border-radius: 0.3rem;
+  cursor: pointer;
+  margin-top: 1rem;
+  transition: transform .1s;
+  background-color: #967E76;
+}
+
+.upload:hover{
+    text-decoration-color: #562B08;
+    background-color: #967E76;
+    transition: background-color 240ms;
+    color: #F5EFE6;
+    transition: color 240ms;
+}
+

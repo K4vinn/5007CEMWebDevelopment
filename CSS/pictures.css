@@ -1,0 +1,25 @@
+.container {
+    column-count : 3;
+    border-radius: 16px;
+    margin: 0px auto;
+    padding: 20px;
+    background-color: #8B7E74;
+}
+
+.pictureContainer {
+    padding: 10px;
+    display: flex;
+}
+
+.picture img{
+    display: flex;
+    width: 350px;
+    margin: 0 auto;
+    border-radius: 16px;
+    object-fit: cover;
+    transition: transform .1s;
+}
+
+.picture img:hover{
+    transform: scale(1.05);
+}

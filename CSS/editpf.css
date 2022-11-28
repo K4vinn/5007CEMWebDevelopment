@@ -1,0 +1,97 @@
+@import url('https://fonts.cdnfonts.com/css/lets-coffee');                
+@import url('https://fonts.cdnfonts.com/css/blacker-sans-trial');
+@import url('https://fonts.cdnfonts.com/css/palleto');
+@import url('https://fonts.cdnfonts.com/css/allrounder-grotesk-test');
+
+.container {
+    margin-top: 70px;
+    justify-content: center;
+    border: 0px solid #ccc;
+    border-radius: 15px;
+    height: 500px;
+    width: 900px;
+    margin-bottom: 10px;
+    padding: 6px 12px;
+    text-align: center;
+    background-color: white;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+
+.container > h1 {
+    margin-top: 10px;
+    text-decoration: underline;
+    font-size: 30px;
+   
+}
+
+.container > p {
+    font-family: sans-serif;
+    font-size: 27px;
+    text-decoration: underline;
+    font-style: italic;
+}
+
+.labels {
+    text-align: right;
+}
+
+.disclaimer {
+    text-align: center;
+    font-size: 15px;
+    color: red;
+}
+
+.inputl {
+    font-family: 'Allrounder Grotesk Test', sans-serif;
+    border-radius: 15px;
+    width: 450px;
+    height: 50px;
+    border: 0px solid;
+    background-color: #DFDFDE;
+    color: black;
+    padding: 10px 10px 10px 10px;
+    margin: 10px 10px 10px 10px;
+    text-align: center;
+}
+
+
+.inputl:focus {
+    outline: none;
+}
+
+.inputl::placeholder{
+    text-align: center;
+    color: lightslategray
+    
+}
+
+.buttonl {
+    font-family: 'Allrounder Grotesk Test', sans-serif;
+    border: 0px solid;
+    border-radius: 12px;
+    background-color: #AC7D88;
+    padding: 10px 10px 10px 10px;
+    width: 300px;
+    height: 60px;
+    transition: transform .1s;
+    transition: color .1s;
+    margin: 0px auto;
+    justify-content: center;
+    align-items: center;
+}
+
+.buttonl:hover {
+    transform: scale(1.01);
+    color: white;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+
+.accno {
+    font-family: 'Allrounder Grotesk Test', sans-serif;
+}
+
+
+
+
+
+
