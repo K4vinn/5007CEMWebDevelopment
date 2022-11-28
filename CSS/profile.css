@@ -1,0 +1,57 @@
+.profile-card {
+    justify-content: center;
+    border: 1px solid #ccc;
+    border-radius: 15px;
+    height: 500px;
+    padding: 6px 12px;
+    cursor: pointer;
+    margin: 0 auto;
+    text-align: center;
+    background-color: #EDE4E0;
+}
+
+.profile-picture {
+    width: 200px;
+    height: 200px;
+    border-radius: 15px;
+    margin: 0 auto;
+    margin-top: 10px;
+}
+
+.profile-card > p {
+    font-size: 15px;
+    color: #967E76;
+}
+
+.btnedit {
+    margin: 0 auto;
+    margin-top: 1rem;
+    border: none;
+    background-color: #967E76;
+    height: 50px;
+    width: 120px;
+    border-radius: 16px;
+    transition: transform .05s;
+    color: white;
+}
+
+.btnedit:hover{
+    transform: scale(1.02);
+}
+
+.bio-card{
+    justify-content: center;
+    border: 1px solid #ccc;
+    border-radius: 15px;
+    height: 140px;
+    padding: 6px 12px;
+    cursor: pointer;
+    margin: 0 auto;
+    text-align: center;
+    background-color: #C7BCA1;
+}
+
+.bio-card > p {
+    color: #EDE4E0;
+}
+

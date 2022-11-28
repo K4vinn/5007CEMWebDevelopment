@@ -1,0 +1,48 @@
+.comments {
+    background-color: white;
+    justify-content: center;
+    border: 1px solid #ccc;
+    height: 500px;
+    width: 60%;
+    padding: 6px 12px;
+    cursor: pointer;
+    margin: 10px auto;
+    text-align: center;
+    
+}
+
+.comments > h4 {
+    color: black;
+    text-decoration: underline;
+}
+
+.input-row {
+	margin-bottom: 20px;
+}
+
+.input-field {
+	width: 100%;
+	border-radius: 4px;
+	padding: 10px;
+	border: #e0dfdf 1px solid;
+}
+
+.btn-submit {
+	padding: 10px 20px;
+	background: #333;
+	border: #1d1d1d 1px solid;
+	color: #f0f0f0;
+	font-size: 0.9em;
+	width: 300px;
+	border-radius: 4px;
+	cursor: pointer;
+        transition: transform .1s;
+}
+
+.btn-submit:hover{
+    transform: scale(1.01);
+    background-color: #ACBD86;
+    border: #ACBD86 1px solid;
+}
+
+

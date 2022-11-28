@@ -10,15 +10,18 @@
 
 .box li{
     text-align: center;
-    margin: 8px;
+    margin: 2px;
     display:inline;
     text-decoration: none;
     font-size: 20px;
-    transition: text-decoration-color 300ms;
+    background-color: #D7C0AE;
+    border-radius: 15px;
+    padding: 4px;
+    transition: transform(1s)
 }
 
 .box li:hover {
-    color: white;
+    tranform: scale(1.02)
 }
 
 .box a {
@@ -30,4 +33,5 @@
 .box h3 {
     color: #562B08;
 }
+
 
