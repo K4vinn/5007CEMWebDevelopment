@@ -169,3 +169,38 @@ body {
     text-decoration: underline;
     background-color:rgb(73, 131, 255);
 }
+
+@media screen and (max-width: 375px) {
+    .detailscontainer{
+        background-color: #8B7E74;
+        justify-content: center;
+        border: 1px solid #ccc;
+        border-radius: 6px;
+        height: auto;
+        width: 365px;
+        padding: 14px;
+        margin: 10px auto;
+        text-align: center;;
+    }
+
+    .preview {
+        margin: 10 auto;
+        justify-content: center;
+        width: 100%;
+        height: auto;
+        outline: none;
+        border: 0px solid #D7C0AE;
+        border-radius: 10px;
+        object-fit: cover;
+        transition: transform .1s;
+    }
+
+    .share {
+        width: 30px;
+        height: 30px;
+        float: right;
+        position: relative;
+        top: 170px;
+        left: 5px;
+    }
+}

@@ -12,4 +12,5 @@ if (!$conn) {
     echo "Connection failed";
     exit();
 }
+?>
 

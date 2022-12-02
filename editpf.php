@@ -28,15 +28,19 @@ $getname = $conn->query($getusername);
         <link rel="stylesheet" href="CSS/editpf.css">
     </head>
     <body>
+    <h1 class='page-title'> The Pictr. Club </h1>
         <div class="header">
-            <a href="index.php" class='page-title'> The Pictr. Club </a>
-            <input class='search' type='search' placeholder='Whats on your mind today?'>
+            <form class='disp' action="" method="post">
+            <input class='search' name='search' id="search" type='search' required placeholder='Search a tag!'> </input> 
+            <button type='submit' class="searchtag" name='tags' id="tags"> Enter </button>
+            </form>
 
             <div class='topnav'>
-                <a href="index.php"> <img class="pfp" src="https://cdn.pixabay.com/photo/2015/10/05/22/37/blank-profile-picture-973460__480.png" alt="user" /> </a>
+                <a href="profile.php"> <img class="pfp" src="https://cdn.pixabay.com/photo/2015/10/05/22/37/blank-profile-picture-973460__480.png" alt="user" /> </a>
                 <a class='navlist' href='profile.php'> Profile </a>
                 <a class='navlist' href='create.php'> Create </a>
                 <a class='navlist' href='saved.php'> Saved </a>
+                
             </div>
         </div>
 

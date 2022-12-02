@@ -4,6 +4,7 @@
     margin: 0px auto;
     padding: 20px;
     background-color: #8B7E74;
+    max-width: 1250px;
 }
 
 .pictureContainer {
@@ -22,4 +23,36 @@
 
 .picture img:hover{
     transform: scale(1.05);
+}
+
+@media screen and (max-width: 1330px) {
+    .container {
+        max-width: 1250px;
+    }
+}
+
+@media screen and (max-width: 1215px) {
+    .container {
+    max-width: 1000px;
+    column-count : 2;
+    }
+}
+
+@media screen and (max-width: 375px) {
+    .container {
+    
+    max-width: 1000px;
+    column-count : 1;
+    margin-left: 10px;
+    margin-right: 10px;
+    }
+    
+    .picture img{
+    display: flex;
+    width: 300px;
+    margin: 0 auto;
+    border-radius: 16px;
+    object-fit: cover;
+    transition: transform .1s;
+}
 }

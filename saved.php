@@ -24,26 +24,26 @@ if (isset($_POST ["tags"])){
         <meta charset="UTF-8">
         <title>The Pictr. Club</title>
         <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
-        <link rel="stylesheet" href="CSS/main.css">
         <link rel="stylesheet" href="CSS/navbar.css">
-        <link rel="stylesheet" href="CSS/save.css"
+        <link rel="stylesheet" href="CSS/save.css">
+        <link rel="stylesheet" href="CSS/main.css">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
     </head>
     <body>
+    <a href='index.php'> <h1 class='page-title'> The Pictr. Club </h1> </a>
         <div class="header">
-            <a href="index.php" class='page-title'> The Pictr. Club </a>
-            <form action="" method="post">
+            <form class='disp' action="" method="post">
             <input class='search' name='search' id="search" type='search' required placeholder='Search a tag!'> </input> 
-            <button type='submit' class="searchtag" name='tags' id="tags"> > </button>
+            <button type='submit' class="searchtag" name='tags' id="tags"> Enter </button>
             </form>
 
             <div class='topnav'>
-                <a href="profile.php"> <img class="pfp" 
-                src="https://cdn.pixabay.com/photo/2015/10/05/22/37/blank-profile-picture-973460__480.png" alt="user" /> </a>
+                <a href="profile.php"> <img class="pfp" src="https://cdn.pixabay.com/photo/2015/10/05/22/37/blank-profile-picture-973460__480.png" alt="user" /> </a>
                 <a class='navlist' href='profile.php'> Profile </a>
                 <a class='navlist' href='create.php'> Create </a>
                 <a class='navlist' href='saved.php'> Saved </a>
+                
             </div>
         </div>
 
@@ -59,27 +59,35 @@ if (isset($_POST ["tags"])){
             $res = mysqli_query($conn, $sql);
             $curId = $_SESSION['id'];
 
+            $getimages = "SELECT * FROM images";
+            $res2 = mysqli_query($conn, $getimages);
+
             $newsql = "SELECT * FROM user";
             $results = mysqli_query($conn, $sql);
 
-           
-                if (mysqli_num_rows($res) > 0) {
-                    while ($saved = mysqli_fetch_assoc($res)) {
-                        if($curId == $saved['saveuserid']){
-                        ?>
-                        <div class='pContainer'>
-                            <div class='pictureContainer'>
-                                <div class="picture">
-                                    <img class='item' src="uploads/<?= $saved['photourl'] ?>">
+            if (mysqli_num_rows($res2)  > 0) {
+                while ($images = mysqli_fetch_assoc($res2)) {
+                    if (mysqli_num_rows($res) > 0) {
+                        while ($saved = mysqli_fetch_assoc($res)) {
+                            if($curId == $saved['saveuserid']){
+                            ?>
+                            <div class='pContainer'>
+                                <div class='pictureContainer'>
+                                    <div class="picture">
+                                        <a href="details.php?uploads/link?id=<?= $saved['savephotoid'] ?>"> <img class='item' src="uploads/<?= $saved['photourl'] ?>"> </a>
+                                    </div>
                                 </div>
                             </div>
-                        </div>
-                        <?php
+                            <?php
+                        }
                     }
+                    }
+            
                 }
-                }
-        
-                ?> 
+            } 
+            ?> 
+           
+ 
             
         
         </div>

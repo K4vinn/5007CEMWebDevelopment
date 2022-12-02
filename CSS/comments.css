@@ -103,3 +103,26 @@
     color: #F1D3B3;
     padding: 10px;
 }
+
+@media screen and (max-width: 375px) {
+    .inputarea {
+        width: 350px;
+    }
+
+    .comments {
+        background-color: white;
+        justify-content: center;
+        border: 1px solid #ccc;
+        height: auto;
+        width: 375px;
+        padding: 6px 12px;
+        cursor: pointer;
+        margin: 10px auto;
+        text-align: center;
+        box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    }
+
+    .commentbox {
+        width: 350px;
+    }
+}

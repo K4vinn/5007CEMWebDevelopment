@@ -71,3 +71,23 @@
     transition: color 240ms;
 }
 
+@media screen and (max-width: 375px) {
+    .upload-card {
+        width: 375px;
+    }
+
+    .preview-card {
+        width: 350px;
+    }
+
+    .inputf {
+        border: none;
+        background-color: #D0D2D7;
+        border-bottom: 1px solid #D2DAFF;
+        outline: none;
+        padding: 5px 10px;
+        margin: 0px auto;
+        margin-top: 0.5rem;
+        width: 350px;
+    }    
+}

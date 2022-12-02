@@ -13,11 +13,10 @@ if(isset($_POST["submit"])) {
         "<script> alert('Username or Email has already been created!') </script>";
     } else {
         if ($password == $confirmpassword){
-            $query = "INSERT INTO user VALUES('', '$username', '$email','$password')";
-            mysqli_query($conn, $query);
+            $q2 = "INSERT INTO user VALUES('','$username','$email','$password', '')";
+            $query = mysqli_query ($conn, $q2);
             echo
             "<script> alert('Registration has been completed! Welcome to the picture club!') </script>";
-             sleep(3);
              header("Location: login.php");
         } else {
             echo

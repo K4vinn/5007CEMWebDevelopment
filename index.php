@@ -25,11 +25,11 @@ if (isset($_POST ["tags"])){
 
 
     <body>
+        <h1 class='page-title'> The Pictr. Club </h1>
         <div class="header">
-            <a href="index.php" class='page-title'> The Pictr. Club </a>
-            <form action="" method="post">
+            <form class='disp' action="" method="post">
             <input class='search' name='search' id="search" type='search' required placeholder='Search a tag!'> </input> 
-            <button type='submit' class="searchtag" name='tags' id="tags"> > </button>
+            <button type='submit' class="searchtag" name='tags' id="tags"> Enter </button>
             </form>
 
             <div class='topnav'>
@@ -37,6 +37,7 @@ if (isset($_POST ["tags"])){
                 <a class='navlist' href='profile.php'> Profile </a>
                 <a class='navlist' href='create.php'> Create </a>
                 <a class='navlist' href='saved.php'> Saved </a>
+                
             </div>
         </div>
 
